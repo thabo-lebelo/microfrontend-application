@@ -47,8 +47,10 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
-        "@thabo/root-config": "//localhost:9000/thabo-root-config.js"
+        "@thabo/navigation": "http://localhost:9001/main.js",
+        "@thabo/dummy-1": "http://localhost:9002/thabo-dummy-1.js",
+        "@thabo/dummy-2": "http://localhost:9003/thabo-dummy-2.js",
+        "@thabo/root-config": "http://localhost:9000/thabo-root-config.js"
       }
     }
   </script>
@@ -58,7 +60,7 @@
     If you need to support Angular applications, uncomment the script tag below to ensure only one instance of ZoneJS is loaded
     Learn more about why at https://single-spa.js.org/docs/ecosystem-angular/#zonejs
   -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/zone.js@0.11.3/dist/zone.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/zone.js@0.11.3/dist/zone.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
   <% if (isLocal) { %>
