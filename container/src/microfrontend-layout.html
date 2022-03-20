@@ -1,25 +1,11 @@
 <single-spa-router>
-  <!--
-
-    This is the single-spa Layout Definition for your microfrontends.
-    See https://single-spa.js.org/docs/layout-definition/ for more information.
-
-  -->
-
-  <!-- Example layouts you might find helpful:
-
-  <nav>
-    <application name="@org/navbar"></application>
-  </nav>
-  <route path="settings">
-    <application name="@org/settings"></application>
-  </route>
-
-  -->
-
-  <main>
-    <route default>
-      <application name="@single-spa/welcome"></application>
-    </route>
-  </main>
+  <div style="height:98vh; display: flex;">
+      <div style="height: 100%; width: 400px; background-color: aqua;">
+          <application name="@thabo/navigation"></application>
+      </div>
+      <div style="width: 100%; background-color: pink;">
+          <application name="@thabo/dummy-1"></application>
+          <application name="@thabo/dummy-2"></application>
+      </div>
+  </div>
 </single-spa-router>
